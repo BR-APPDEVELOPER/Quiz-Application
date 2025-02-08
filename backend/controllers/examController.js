@@ -137,7 +137,7 @@ const deleteQuestion = async(req, res)=>{
     const id = req.params.id;
 
     try{
-        const deletedQus = await ExamColloection.findByIdAndDelete(id);
+        const deletedQus = await QuestionCollection.findByIdAndDelete(id);
 
         if(!deletedQus){
             return res.json({success: false});
