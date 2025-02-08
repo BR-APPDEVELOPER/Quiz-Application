@@ -1,0 +1,113 @@
+.left-side-nav-bar {
+    background-color: #0F3460;
+    width: 180px;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.nav-bar label {
+    color: white;
+    font-size: larger;
+    
+}
+
+.home-btn,
+.report-btn,
+.logout-btn,
+.exam-btn{
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 2px solid white;    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.div-box {
+    position: relative;
+}
+
+.top-menu {
+    position: absolute;
+    background-color: #0F3460;
+    top: 0px;
+    right: 0px;
+    width: 1161px;
+    border-radius: 5px;
+    height: 100px;
+    color: white;
+}
+
+.title {
+    line-height: 90px;
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+.details {
+    position: absolute;
+    right: 20px;
+    font-size: 17px;
+    top: 32px;
+}
+
+/* main div for exam display and vertical scrolling */
+.main-exam-div {
+    position: absolute;
+    width: 1155px;
+    height: 480px;
+    overflow-y: auto;
+    /*Enables vertical scrolling */
+    top: 110px;
+    left: 190px;
+}
+
+.grid-div-exam {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/* 4 columns*/
+    gap: 15px;
+}
+
+.item{
+    border: 2px solid rgba(189, 189, 189, 0.774);
+    padding: 20px;
+}
+
+#exam-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.item div{
+    margin-top: 10px;
+}
+
+.item label{
+    font-size: 20px;
+    height: fit-content;
+    margin-top: 2px;
+}
+
+.item button{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: white;
+    border-color: #1b5192bd;
+    cursor: pointer;
+}
+
+.item button:hover{
+    color: white;
+    background-color: #0F3460;
+}

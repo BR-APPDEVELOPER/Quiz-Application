@@ -1,0 +1,254 @@
+.left-side-nav-bar {
+    background-color: #0F3460;
+    width: 180px;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.nav-bar label {
+    color: white;
+    font-size: larger;
+    
+}
+
+.home-btn,
+.report-btn,
+.logout-btn,
+.exam-btn{
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 2px solid white;    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.div-box {
+    position: relative;
+}
+
+.top-menu {
+    position: absolute;
+    background-color: #0F3460;
+    top: 0px;
+    right: 0px;
+    width: 1162px;
+    border-radius: 5px;
+    height: 100px;
+    color: white;
+}
+
+.title {
+    line-height: 90px;
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+.details {
+    position: absolute;
+    right: 20px;
+    font-size: 17px;
+    top: 32px;
+}
+
+/* Quiz Container */
+.quiz-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    width: 1120px;
+    height: 445px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Question Styling */
+.question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.question-number {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.question-text {
+    font-size: 26px;
+    color: black;
+}
+
+.timer {
+    background-color: #964B00; /* Brown color */
+    color: white;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.option.selected {
+    border-color: #007bff;
+    background-color: #eaf4ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous-button,
+.next-button,
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.next-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.submit-button {
+    background-color: #ff5722;
+    color: white;
+}
+
+.previous-button:hover {
+    background-color: #0056b3;
+}
+
+.next-button:hover {
+    background-color: #218838;
+}
+
+.submit-button:hover {
+    background-color: #e64a19;
+}
+
+
+/* Result Container */
+.result-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0F3460;
+  }
+  
+  .result-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  .result-details p {
+    margin: 8px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .result-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-retake {
+    background: #fff;
+    color: #0F3460;
+    border: 1px solid #0F3460;
+  }
+  
+  .btn-retake:hover {
+    background: #0F3460;
+    color: #fff;
+  }
+  
+  .btn-review {
+    background: #0F3460;
+    color: #fff;
+  }
+  
+  .btn-review:hover {
+    background: #0F3460;
+  }
+  

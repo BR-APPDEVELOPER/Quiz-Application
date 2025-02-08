@@ -1,0 +1,102 @@
+.exam-top-menu{
+    
+        position: absolute;
+        background-color: #0F3460;
+        top: 0px;
+        right: 0px;
+        width: 1145px;
+        border-radius: 5px;
+        height: 100px;
+        color: white;
+    
+}
+
+.add-exam-label{
+        position: absolute;
+        top: 120px;
+        font-size: 35px;
+        color: rgba(0, 0, 0, 0.87);
+        right: 0px;
+        width: 1145px;
+}
+
+.form-container {
+        position: absolute;
+        top: 150px;
+        right: 35px;
+        width: 1105px;
+        margin: 50px auto;        
+        font-family: Arial, sans-serif;
+}
+
+/* Form rows */
+.form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+}
+
+/* Individual form groups */
+.form-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+}
+
+.form-group:last-child {
+        margin-right: 0;
+        /* Remove margin for the last element */
+}
+
+.form-container label {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #333;
+}
+
+.form-container input,
+select {
+        padding: 8px;
+        font-size: 14px;
+        border: 2px solid #a0a0a0;
+        border-radius: 4px;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+}
+
+/* Buttons container */
+.form-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+}
+
+/* Cancel button */
+.btn-cancel {
+        padding: 10px 20px;
+        background: transparent;
+        border: 1px solid #333;
+        color: #333;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.btn-cancel:hover {
+        background: #f1f1f1;
+}
+
+/* Save button */
+.btn-save {
+        padding: 10px 20px;
+        background: #1a3d7c;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.btn-save:hover {
+        background: #144173;
+}
