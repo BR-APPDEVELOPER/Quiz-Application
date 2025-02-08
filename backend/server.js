@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api', userRoutes);
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerJSDocs))
 
 app.get('/', (req, res)=>{
     res.send("<h1>Hello world</h1>");
