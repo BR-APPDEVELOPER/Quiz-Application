@@ -133,4 +133,21 @@ const getExamDetails = async(req, res)=>{
     }
 };
 
-module.exports ={addExam, getAllExam, editExam, deleteExam, addQuestion, getQuestion, getStartedExam, getExamDetails};
+const deleteQuestion = async(req, res)=>{
+    const id = req.params.id;
+
+    try{
+        const deletedQus = await ExamColloection.findByIdAndDelete(id);
+
+        if(!deletedQus){
+            return res.json({success: false});
+        }
+
+        return res.json({success: true});
+    } catch(error){
+        console.error("Error deleting question:", error); // Debugging
+        return res.json({success: false});
+    }
+};
+
+module.exports ={addExam, getAllExam, editExam, deleteExam, addQuestion, getQuestion, deleteQuestion, getStartedExam, getExamDetails};

@@ -1,6 +1,6 @@
 const express = require('express');
 const { createUser, loginUser, getUserData} = require('../controllers/userController');
-const { addExam, getAllExam, editExam, deleteExam, addQuestion, getQuestion, getStartedExam, getExamDetails} = require('../controllers/examController');
+const { addExam, getAllExam, editExam, deleteExam, addQuestion, getQuestion, deleteQuestion, getStartedExam, getExamDetails} = require('../controllers/examController');
 
 const router = express.Router();
 
@@ -18,9 +18,10 @@ router.delete('/exam/delete-exam/:id', deleteExam);
 //add question
 router.post('/exam/add-question', addQuestion);
 router.get('/exam/get-all-question/:id', getQuestion);
+router.delete('/exam/delete-exam/:id', deleteExam);
 
 //start exam
 router.get('/users/exam/:examId', getStartedExam);
-router.get('/users/exam-detail/:examId', getExamDetails);
+router.get('/exam/delete-question/:id', deleteQuestion);
 
 module.exports = router;
