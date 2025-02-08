@@ -9,7 +9,7 @@ const StartExam = () => {
     const [examDetail, setExamDetail] = useState([]);
     const [score, setScore] = useState(0);
     const [answers, setAnswers] = useState({});
-    const [count, setCount] = useState(10);
+    const [count, setCount] = useState();
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showResult, setShowResult] = useState(false);
     const [scoreArray, setScoreArray] = useState([]);
@@ -22,7 +22,7 @@ const StartExam = () => {
 
     async function getExamQuesion() {
         try {
-            const res = await axios.get(`${process.env.WEB_URL}/api/users/exam/${examId}`);
+            const res = await axios.get(`${process.env.REACT_APP_WEB_URL}/api/users/exam/${examId}`);
             if (res.data.success) {
                 setExam(res.data.examDetail);
                 setScoreArray(new Array(res.data.examDetail.length).fill(0));
@@ -34,10 +34,10 @@ const StartExam = () => {
 
     async function getExamDetails() {
         try {
-            const res = await axios.get(`${process.env.WEB_URL}/api/users/exam-detail/${examId}`);
+            const res = await axios.get(`${process.env.REACT_APP_WEB_URL}/api/users/exam-detail/${examId}`);
             if (res.data.success) {
                 setExamDetail(res.data.examDetails);
-                //setCount(Number(res.data.examDetails.duration) || 0);
+                setCount(Number(res.data.examDetails.duration) || 0);
             } else {
                 console.log("Error fetching exam details");
             }

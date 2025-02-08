@@ -13,7 +13,7 @@ function Register() {
     const handleSignup = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${process.env.WEB_URL}/api/users/signup`, {
+            const response = await axios.post(`${process.env.REACT_APP_WEB_URL}/api/users/signup`, {
                 username,
                 email,
                 password,

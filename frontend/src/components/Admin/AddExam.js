@@ -30,7 +30,7 @@ const AddExam = () => {
     async function addExam() {
         
         try {
-            const res = await axios.post(`${process.env.WEB_URL}/api/admin/exam/add`, {
+            const res = await axios.post(`${process.env.REACT_APP_WEB_URL}/api/admin/exam/add`, {
                 name: examName,
                 duration: examDuration,
                 category: examCategory,
@@ -61,7 +61,7 @@ const AddExam = () => {
     async function editExam() {
         
         try {
-            const res = await axios.patch(`${process.env.WEB_URL}/api/exam/edit-exam/${edit.id}`, {
+            const res = await axios.patch(`${process.env.REACT_APP_WEB_URL}/api/exam/edit-exam/${edit.id}`, {
                 name: examName,
                 duration: examDuration,
                 category: examCategory,

@@ -22,6 +22,7 @@ router.delete('/exam/delete-exam/:id', deleteExam);
 
 //start exam
 router.get('/users/exam/:examId', getStartedExam);
+router.get('/users/exam-detail/:examId', getExamDetails);
 router.get('/exam/delete-question/:id', deleteQuestion);
 
 module.exports = router;

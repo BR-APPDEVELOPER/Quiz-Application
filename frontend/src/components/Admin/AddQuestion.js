@@ -32,7 +32,7 @@ const AddQuestion = () => {
     async function addQuestion(e) {
         e.preventDefault();
         try {
-            const res = await axios.post(`${process.env.WEB_URL}/api/exam/add-question`, {
+            const res = await axios.post(`${process.env.REACT_APP_WEB_URL}/api/exam/add-question`, {
                 name: question,
                 correctOption: correctOption,
                 options: {
@@ -178,7 +178,7 @@ const AddQuestion = () => {
                         </div>
 
                         <div className="form-buttons">
-                            <button type="button" className="btn-cancel" onClick={() => navigate('/exam/show-question')}>Cancel</button>
+                            <button type="button" className="btn-cancel" onClick={() => navigate('/exam/show-question', {state: {examId: examId}})}>Cancel</button>
                             <button type="submit" className="btn-save">Save</button>
                         </div>
 

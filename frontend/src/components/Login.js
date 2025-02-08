@@ -12,7 +12,7 @@ function Login() {
         e.preventDefault();
 
         try {
-            const res = await axios.post(`${process.env.WEB_URL}/api/users/login`, {
+            const res = await axios.post(`${process.env.REACT_APP_WEB_URL}/api/users/login`, {
                 email,
                 password
             });

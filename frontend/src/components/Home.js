@@ -14,7 +14,7 @@ const Home = () => {
 
     async function getUserData() {
         try {
-            const res = await axios.get(`${process.env.WEB_URL}/api/users/${email}`);
+            const res = await axios.get(`${process.env.REACT_APP_WEB_URL}/api/users/${email}`);
 
             if (res.data.success) {
                 setUser(res.data.user);
@@ -39,7 +39,7 @@ const Home = () => {
         try {
             //console.log(process.env.WEB_LINK);
             
-            const res = await axios.get(`${process.env.WEB_URL}/api/exam/get-all-exam`);
+            const res = await axios.get(`${process.env.REACT_APP_WEB_URL}/api/exam/get-all-exam`);
 
             if (res.data.success) {
                 setNoExamFound(true);
