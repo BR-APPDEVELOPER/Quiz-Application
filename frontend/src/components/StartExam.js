@@ -22,7 +22,7 @@ const StartExam = () => {
 
     async function getExamQuesion() {
         try {
-            const res = await axios.get(`http://localhost:5000/api/users/exam/${examId}`);
+            const res = await axios.get(`${process.env.WEB_URL}/api/users/exam/${examId}`);
             if (res.data.success) {
                 setExam(res.data.examDetail);
                 setScoreArray(new Array(res.data.examDetail.length).fill(0));
@@ -34,7 +34,7 @@ const StartExam = () => {
 
     async function getExamDetails() {
         try {
-            const res = await axios.get(`http://localhost:5000/api/users/exam-detail/${examId}`);
+            const res = await axios.get(`${process.env.WEB_URL}/api/users/exam-detail/${examId}`);
             if (res.data.success) {
                 setExamDetail(res.data.examDetails);
                 //setCount(Number(res.data.examDetails.duration) || 0);

@@ -16,7 +16,7 @@ const ShowQuestion = () => {
     async function getQuestion() {
         
         try {
-            const res = await axios.get(`http://localhost:5000/api/exam/get-all-question/${id}`);
+            const res = await axios.get(`${process.env.WEB_URL}/api/exam/get-all-question/${id}`);
 
             if (res.data.success) {
                 setNoExamFound(true);
@@ -46,7 +46,7 @@ const ShowQuestion = () => {
 
     async function deleteQuestion(id) {
         try {
-            const res = await axios.delete(`http://localhost:5000/api/exam/delete-question/${id}`);
+            const res = await axios.delete(`${process.env.WEB_URL}/api/exam/delete-question/${id}`);
 
             if (res.data.success) {
                 getQuestion();

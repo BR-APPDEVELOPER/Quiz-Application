@@ -12,7 +12,7 @@ const Exam = () => {
 
     async function getExam() {
         try {
-            const res = await axios.get("http://localhost:5000/api/exam/get-all-exam");
+            const res = await axios.get(`${process.env.WEB_URL}/api/exam/get-all-exam`);
 
             if (res.data.success) {
                 setNoExamFound(true);
@@ -41,7 +41,7 @@ const Exam = () => {
 
     async function deleteExam(id) {
         try {
-            const res = await axios.delete(`http://localhost:5000/api/exam/delete-exam/${id}`);
+            const res = await axios.delete(`${process.env.WEB_URL}/api/exam/delete-exam/${id}`);
 
             if (res.data.success) {
                 getExam();

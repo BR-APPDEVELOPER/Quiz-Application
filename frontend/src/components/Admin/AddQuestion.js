@@ -32,7 +32,7 @@ const AddQuestion = () => {
     async function addQuestion(e) {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:5000/api/exam/add-question", {
+            const res = await axios.post(`${process.env.WEB_URL}/api/exam/add-question`, {
                 name: question,
                 correctOption: correctOption,
                 options: {
