@@ -23,30 +23,3 @@ npm start
 
 # Server runs on  http://localhost:5000
 ```
-
-<i><h2>1) Registration Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/register.png"/>
-<i><h2>2) Login Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/login.png"/>
-<i><h2>3) Admin Profile Home Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_homepage.png"/>
-<i><h2>4) Add Quiz Page in which Admin Post the Quiz into the MongoDB Database</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_add_exam.png"/>
-<i><h2>5) Add Questions in Quiz </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_add_ques.png"/>
-<i><h2>6) Edit Exam by Admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_edit_exam.png"/>
-<i><h2>7) Edit Que by Admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_edit_que.png"/>
-<i><h2>8) User's Profile </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_home.png"/>
-<i><h2>9) Instructions before exam </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/User_instruction.png"/>
-
-<i><h2>10) User Result</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_result.png"/>
-
-<i><h2>11) Reports of all users that can be seen by only admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_report.png"/>
-<i><h2>12) User can see only his/her report </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_report.png"/>
